@@ -78,7 +78,6 @@ function process(rawText) {
 			response = "I am as old as the eastern wind, and a young as a newborn caterpillar."; break; 
 		case "thankyou":
 			response = "You're welcome!!";
-			toggleBtn();  
 		case "stop":
 			response = "Bye!!";
 			toggleBtn();
