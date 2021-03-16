@@ -3,7 +3,7 @@ const startBtn = document.createElement("button");
 startBtn.innerHTML = "Start listening";
 const result = document.createElement("div");
 const processing = document.createElement("p");
-document.write("<body><h1>Intruction to (My Siri) </h1><p>Give it a try with 'hello', 'how are you', 'what's your name', 'what time is it', 'what is github', 'thank you', stop' try saying hey siri and then say what time is it, ... </p></body>");
+document.write("<body><h1>Intruction to (My Siri) </h1><p>Give it a try with 'hello', 'how are you', 'what's your name', 'what time is it', 'what is github', 'thank you', stop' try saying hey siri and then say what time is itwhat is your name, ... </p></body>");
 document.body.append(startBtn);
 document.body.append(result);
 document.body.append(processing);
@@ -66,6 +66,8 @@ function process(rawText) {
 			response = "hi, how are you doing?"; break;
 		case "what'syourname":
 			response = "My name's Siri.";  break;
+        case "what is your name":
+			response = "My name's Siri.";  break;            
 		case "howareyou":
 			response = "I'm good."; break;
 		case "heysiri":
